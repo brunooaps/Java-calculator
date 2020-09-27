@@ -11,13 +11,13 @@ public class cardapio
 {
 	static boolean exit;
 	
-	//Dar boas vindas e apresentar as opções
+	//Dar boas vindas e apresentar as opÃ§Ãµes
 	public static void main(String[] args) throws IOException {
 		cardapio menu = new cardapio();
 		menu.runMenu();
 	}
 	
-	//Codigo que apresenta o boas vindas e opções
+	//Codigo que apresenta o boas vindas e opÃ§Ãµes
 	public static void runMenu() throws IOException {
 		printHeader();
 			printMenu();
@@ -33,7 +33,7 @@ public class cardapio
 		System.out.println("+-----------------------------------+");
 	}
 	
-	//opções
+	//opï¿½ï¿½es
 	public static void printMenu() {
 		System.out.println("\nSelecione que tipo deseja: ");
 		System.out.println("1) Pratos");
@@ -48,23 +48,23 @@ public class cardapio
 		int choice = -1;
 		while(choice < 0 || choice > 3) {
 			try {
-				System.out.println("\nEscolha uma opção: "); //quando escolher entre pratos bebiba e vinho, apresentar as opções de tal
+				System.out.println("\nEscolha uma opÃ§Ã£o: "); //quando escolher entre pratos bebiba e vinho, apresentar as opÃ§Ãµes de tal
 				choice = Integer.parseInt(kb.nextLine());
 				}	
 			catch(NumberFormatException e) {
-				System.out.println("Seleção invalida, tente novamente"); //escolheu uma opção invalida
+				System.out.println("SeleÃ§Ã£o invalida, tente novamente"); //escolheu uma opÃ§Ã£o invalida
 				}
 			}
 		
 		return choice;
 		}
 	
-	//codigo apartir da escolha, até o fim do pedido
+	//codigo apartir da escolha, atï¿½ o fim do pedido
 	private static void performAction(int choice) throws IOException {
 		switch(choice) {
 			case 0:
 				exit = true;											//caso tenha escolhido sair
-				System.out.println("Obrigado por usar nossa aplicação");
+				System.out.println("Obrigado por usar minha aplicaÃ§Ã£o");
 				break;
 			case 1:
 				

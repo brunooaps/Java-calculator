@@ -17,7 +17,7 @@ public class leitor {
 		String linha_comida = leitor_comida.nextLine();
 		
 		int contador = 1;
-		System.out.println("\nOs pratos do card·pio s„o: \n");
+		System.out.println("\nOs pratos do card√°pio s√£o: \n");
 		while(leitor_comida.hasNextLine()) {
 			linha_comida = leitor_comida.nextLine();
 			String[] partes = linha_comida.split(";");
@@ -37,7 +37,7 @@ public class leitor {
 		String linha_bebida  = leitor_bebida.nextLine();
 		
 		int contador = 1;
-		System.out.println("\nAs bebidas do card·pio s„o: \n");
+		System.out.println("\nAs bebidas do card√°pio s√£o: \n");
 		while(leitor_bebida.hasNext()) {
 			linha_bebida = leitor_bebida.nextLine();
 			String[] partes = linha_bebida.split("	");
@@ -57,7 +57,7 @@ public class leitor {
 		String linha_vinho = leitor_vinho.nextLine();
 		
 		int contador = 1;
-		System.out.println("\nOs vinhos do card·pio s„o: \n");
+		System.out.println("\nOs vinhos do card√°pio s√£o: \n");
 		while(leitor_vinho.hasNext()) {
 			linha_vinho = leitor_vinho.nextLine();
 			String[] partes = linha_vinho.split("	");
